@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.color:hover {
+border: 200px solid linear-gradient(yellow, yellow, yellow, lightgreen, lightgreen, lightblue, cyan, blue, violet, pink, fuchsia, orange, red, black, black, black, black, black, black);
+	
+	animation: gradient 0.1s ease infinite;
+}
+button {
+        width: 50%;
+        height: 50%;
+        background: black;
+        border-radius: 50%;
+}
+</style>
+</head>
+<body bgcolor="black">
+<div class="color">
+     <button></button></div>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--This function can be used to write text, HTML, or both.-->
+
+<script language="javascript" type="text/javascript">
+<!--
+ document.write ("Hello World!")
+//-->
+function sayWelome() {
+alert("Welcome")
+}
+function sayHello() {
+ alert("Hello World")
+}</script>
+<script>
+
+function checkscope( ) {
+ var myVar = "local";
+ document.write(myVar);
+}
+document.write("....");
+</script>
+<body onload="sayWelome()">
+<noscript>
+ Sorry...JavaScript is needed to go ahead.
+</noscript><br>
+<script type="text/javascript">
+ var r = new RegExp( "string" );
+ document.write("re.constructor is:" + r.constructor); 
+</script><br>
+<input type="button" onclick="sayHello()" value="Say Hello" />
+<br>
+<input type="button" onclick="checkscope( )" value="Global" />
+
+<br><br><br><br>
+
+<br><br><br><br>
+<script>
+var a = 33;
+var b = 10;
+var c = "Test";
+var linebreak = "<br />";
+document.write("a + b = ");
+result= a + b;
+document.write(result);
+document.write(linebreak);
+document.write("a - b = ");
+result = a - b;
+document.write(result);
+document.write(linebreak);
+document.write("a / b = ");
+result = a / b;
+document.write(result);
+document.write(linebreak);
+document.write("a % b = ");
+result = a % b;
+document.write(result);
+document.write(linebreak);
+document.write("a + b + c = ");
+result = a + b + c;
+document.write(result);
+document.write(linebreak);
+a = a++;
+document.write("a++ = ");
+result = a++;
+document.write(result);
+document.write(linebreak);
+b = b--;
+document.write("b-- = ");
+result = b--;
+document.write(result);
+document.write(linebreak);
+</script>
+<br><br>
+<script>
+var a = 10;
+var b = 20;
+var linebreak = "<br />";
+document.write("(a == b) => ");
+result = (a == b);
+document.write(result);
+document.write(linebreak);
+document.write("(a < b) => ");
+result = (a < b);
+document.write(result);
+document.write(linebreak);
+document.write("(a > b) => ");
+result = (a > b);
+document.write(result);
+document.write(linebreak);
+document.write("(a != b) => ");
+result = (a != b);
+document.write(result);
+document.write(linebreak);
+document.write("(a >= b) => ");
+result = (a >= b);
+document.write(result);
+document.write(linebreak);
+document.write("(a <= b) => ");
+result = (a <= b);
+document.write(result);
+document.write(linebreak);
+</script>
+
+<br><br> 
+<script type="text/javascript">
+<!--
+var a = true;
+var b = false;
+var linebreak = "<br />";
+document.write("(a && b) => ");
+result = (a && b);
+document.write(result);
+document.write(linebreak);
+document.write("(a || b) => ");
+result = (a || b);
+document.write(result);
+document.write(linebreak);
+document.write("!(a && b) => ");
+result = (!(a && b));
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<br><br>
+<script type="text/javascript">
+<!--
+var a = 2; // Bit presentation 10
+var b = 3; // Bit presentation 11
+var linebreak = "<br />";
+document.write("(a & b) => ");
+result = (a & b);
+document.write(result);
+document.write(linebreak);
+document.write("(a | b) => ");
+result = (a | b);
+document.write(result);
+document.write(linebreak);
+document.write("(a ^ b) => ");
+result = (a ^ b);
+document.write(result);
+document.write(linebreak);
+document.write("(~b) => ");
+result = (~b);
+document.write(result);
+document.write(linebreak);
+document.write("(a << b) => ");
+result = (a << b);
+document.write(result);
+document.write(linebreak);
+document.write("(a >> b) => ");
+result = (a >> b);
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<br><br>
+<script type="text/javascript">
+<!--
+var a = 33;
+var b = 10;
+var linebreak = "<br />";
+document.write("Value of a => (a = b) => ");
+result = (a = b);
+document.write(result);
+document.write(linebreak);
+document.write("Value of a => (a += b) => ");
+result = (a += b);
+document.write(result);
+document.write(linebreak);
+document.write("Value of a => (a -= b) => ");
+result = (a -= b);
+document.write(result);
+document.write(linebreak);
+document.write("Value of a => (a *= b) => ");
+result = (a *= b);
+document.write(result);
+document.write(linebreak);
+document.write("Value of a => (a /= b) => ");
+result = (a /= b);
+document.write(result);
+document.write(linebreak);
+document.write("Value of a => (a %= b) => ");
+result = (a %= b);
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<br><br>
+<script type="text/javascript">
+<!--
+var a = 10;
+var b = 20;
+var linebreak = "<br />";
+document.write ("((a > b) ? 100 : 200) => ");
+result = (a > b) ? 100 : 200;
+document.write(result);
+document.write(linebreak);
+document.write ("((a < b) ? 100 : 200) => ");
+result = (a < b) ? 100 : 200;
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<br>br>
+<script type="text/javascript">
+<!--
+var a = 10;
+var b = "String";
+var linebreak = "<br />";
+result = (typeof b == "string" ? "B is String" : "B is Numeric");
+document.write("Result => ");
+document.write(result);
+document.write(linebreak);
+result = (typeof a == "string" ? "A is String" : "A is Numeric");
+document.write("Result => ");
+document.write(result);
+document.write(linebreak);
+//-->
+</script>
+<br><br>
+<script type="text/javascript">
+<!--
+var age = 20;
+if( age > 18 ){
+ document.write("<b>Qualifies for driving</b>");
+}
+//-->
+</script>
+<br><br>
+<script type="text/javascript">
+<!--
+var age = 15;
+if( age > 18 ){
+ document.write("<b>Qualifies for driving</b>");
+}else{
+ document.write("<b>Does not qualify for driving</b>");
+} //-->
+<br><br>
+<script type="text/javascript">
+<!--
+var book = "maths";
+if( book == "history" ){
+ document.write("<b>History Book</b>");
+}else if( book == "maths" ){
+ document.write("<b>Maths Book</b>");
+}else if( book == "economics" ){
+ document.write("<b>Economics Book</b>");
+}else{
+ document.write("<b>Unknown Book</b>");
+}
+//-->
+</script>
+<br><br><br><br>
+<script type="text/javascript">
+<!--
+function showTutorial(name){
+ document.myform.stage.value = name
+}
+//-->
+</script>
+
+
+<form name="myform">
+ <input type="text" name="stage" size="20" />
+</form>
+<!-- Create Mappings -->
+<img src="https://drive.google.com/uc?export=view&id=1jFa5ik-JQEWMpSTdBC8vKXhgo3bUwDXS" alt="HTML Map" 
+ border="0" usemap="#tutorials"/>
+<map name="tutorials">
+ <area shape="poly" 
+ coords="74,0,113,29,98,72,52,72,38,27"
+ href="/perl/index.htm" alt="Perl Tutorial"
+ target="_self" 
+ onMouseOver="showTutorial('perl')" 
+ onMouseOut="showTutorial('')"/>
+ <area shape="rect" 
+ coords="22,83,126,125"
+ href="/html/index.htm" alt="HTML ;Tutorial" 
+ target="_self" 
+ onMouseOver="showTutorial('html')" 
+ onMouseOut="showTutorial('')"/>
+ <area shape="circle" 
+ coords="73,168,32"
+ href="/php/index.htm" alt="PHP Tutorial"
+ target="_self" 
+ onMouseOver="showTutorial('php')" 
+ onMouseOut="showTutorial('')"/>
+</map>
+
+<br><br><br><br>
+<script type="text/javascript">
+<!--
+function play()
+{
+ if (!document.demo.IsPlaying()){
+ document.demo.Play();
+ }
+}
+function stop()
+{
+ if (document.demo.IsPlaying()){
+ document.demo.StopPlay();
+ }
+}
+function rewind()
+ if (document.demo.IsPlaying()){
+ document.demo.StopPlay();
+ }
+ document.demo.Rewind();
+}//-->
+</script>
+
+<embed id="demo" name="demo"
+ src="http://www.amrood.com/games/kumite.swf"
+ width="318" height="300" play="false" loop="false"
+ pluginspage="http://www.macromedia.com/go/getflashplayer"
+ swliveconnect="true">
+</embed>
+<form name="form" id="form" action="#" method="get">
+<input type="button" value="Start" onclick="play();" />
+<input type="button" value="Stop" onclick="stop();" />
+<input type="button" value="Rewind" onclick="rewind();" />
+</form>
+<br><br><br><br>
+<script type="text/javascript">
+<!--
+function play()
+{
+ if (!document.demo.IsPlaying()){
+ document.demo.Play();
+ }
+}
+function stop()
+{
+ if (document.demo.IsPlaying()){
+ document.demo.StopPlay();
+ }
+}
+function rewind()
+ if (document.demo.IsPlaying()){
+ document.demo.StopPlay();
+ }
+ document.demo.Rewind();
+}
+//-->
+</script>
+</head>
+<body>
+<embed id="demo" name="demo"
+ src="http://www.amrood.com/games/kumite.swf"
+ width="318" height="300" play="false" loop="false"
+ pluginspage="http://www.macromedia.com/go/getflashplayer"
+ swliveconnect="true">
+</embed>
+<form name="form" id="form" action="#" method="get">
+<input type="button" value="Start" onclick="play();" />
+<input type="button" value="Stop" onclick="stop();" />
+<input type="button" value="Rewind" onclick="rewind();" />
+</form>
+<br><br><br><br>
+<script language="JavaScript" type="text/javascript">
+media = navigator.mimeTypes["video/quicktime"];
+if (media){
+ document.write("<embed src='quick.mov' height=100 width=100>");
+}
+else{document.write("<img src='quick.gif' height=100 width=100>");
+}
+</script>
+<br><br><br><br>
+<table border="1">
+<tr><th>Plug-in Name</th><th>Filename</th><th>Description</th></tr>
+<script LANGUAGE="JavaScript" type="text/javascript">
+for (i=0; i<navigator.plugins.length; i++) {
+ document.write("<tr><td>");
+ document.write(navigator.plugins[i].name);
+ document.write("</td><td>");
+ document.write(navigator.plugins[i].filename);
+ document.write("</td><td>");
+ document.write(navigator.plugins[i].description);
+ document.write("</td></tr>");
+}
+</script>
+</table>
+<br><br><br><br>
+<script type="text/javascript">
+<!--
+var userAgent = navigator.userAgent;
+var opera = (userAgent.indexOf('Opera') != -1);
+var ie = (userAgent.indexOf('MSIE') != -1);
+var gecko = (userAgent.indexOf('Gecko') != -1);
+var netscape = (userAgent.indexOf('Mozilla') != -1);
+var version = navigator.appVersion;
+if (opera){
+ document.write("Opera based browser");
+ // Keep your opera specific URL here.
+}else if (gecko){
+ document.write("Mozilla based browser");
+ // Keep your gecko specific URL here.
+}else if (ie){
+ document.write("IE based browser");
+ // Keep your IE specific URL here.
+}else if (netscape){
+ document.write("Netscape based browser");
+ // Keep your Netscape specific URL here.
+}else{
+ document.write("Unknown browser");
+}
+// You can include version to along with any above condition.
+
+document.write("<br /> Browser version info : " + version );
+//-->
+</script>
+<script>
+ar debugging = true;
+var whichImage = "widget";
+if( debugging )
+ alert( "Calls swapImage() with argument: " + whichImage );
+var swapStatus = swapImage( whichImage );
+if( debugging )
+ alert( "Exits swapImage() with swapStatus=" + swapStatus );
+</script>
+.about .about-content .left{
+    width: 45%;
+}
+
+
+</body>
+</html>

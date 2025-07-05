@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Document Object Model</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                This is Box!
+            </div>
+        </div>
+        <script type="text/javascript" charset="utf-8">
+        //DOM
+            document.title = "Harry is good!";
+            console.log(document.title);
+            console.log(document.body);
+            document.body.style.backgroundColor = "green";//It insert inline css
+        //BOM
+            console.log(window);
+            console.log(window.document);
+            console.log(window.location);
+            console.log(window.document.body);
+        </script>
+    </body>
+</html>

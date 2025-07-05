@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #fff;
+            gap: 10px;
+            border: 2px solid #ff994f;
+            /* Added 3D border */
+            border-radius: 50px;
+            font-weight: bold;
+            background: linear-gradient(270deg, #ff994f, #fa6d86);
+            cursor: pointer;
+            animation: glowing 1.5s infinite alternate;
+        }
+
+        .btn:hover {
+            background: linear-gradient(270deg, #fa6d86, #ff994f);
+        }
+
+@keyframes glowing {
+            0% {
+                box-shadow: 0 0 10px #ff6b6b;
+            }
+            100% {
+                box-shadow: 0 0 20px #ff6b6b;
+            }
+        }
+
+        #companyName {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border: 2px solid #ff994f;
+            /* Added 3D border */
+            padding: 10px;
+            /* Added padding for better appearance */
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="generateCompanyName()" class="btn">Generate Company Name</button> <br />
+    <p id="companyName"></p>
+    <!-- Paragraph element to display the company name -->
+    <script type="text/javascript" charset="utf-8">
+        function generateCompanyName() {
+            let first = "",
+            second = "",
+            third = "";
+            let rand = Math.random();
+            if (rand < 0.33) {
+                first = "Crazy";
+            } else if (rand < 0.66) {
+                second = "Amazing";
+            } else {
+                third = "Fire";
+            }
+            rand = Math.random();
+            if (rand < 0.33) {
+                first = "Engine";
+            } else if (rand < 0.66) {
+                second = "Foods";
+            } else {
+                third = "Garments";
+            }
+            rand = Math.random();
+            if (rand < 0.33) {
+                first = "Bros";
+            } else if (rand < 0.66) {
+                second = "Limited";
+            } else {
+                third = "Hub";
+            }
+            // Concatenate the company name
+            let companyName = `${first} ${second} ${third}`;
+            // Display the company name on the webpage
+            document.getElementById("companyName").textContent = companyName;
+        }
+    </script>
+</body>
+</html>

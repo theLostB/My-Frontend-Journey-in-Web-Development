@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,intial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Website</title>
+<style>
+
+.nav a {
+
+            list-style: none;
+
+            height: 1px;
+
+            line-height: 0px;
+
+            font-size: 5rem;
+
+            font-weight: bold;
+
+            display: green;
+  
+            padding: 10px 10px;
+      
+            text-decoration: none;
+              color:red;
+            
+        }
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 0px;
+}
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+the
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: ;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: ;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: ;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: ;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+#Contact.row(
+        display:flex;
+        align-item: center;
+    justify-content: space-around;
+)
+#Contact .row .content-info .box(
+     margin:4rem 2rem;
+)
+  .Contact .row .content-info .box h3(color:"red")
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+} 
+
+
+
+input:hover,
+.btn:hover {
+  opacity: 5;
+   color:green;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.fa {
+  
+  font-size: 30px;
+  
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+</style>
+</head>
+<body style="background-color:cyan">
+
+<!--header section start-->
+<header>
+<h6 style="color: red"; margin:1; padding:1"> 
+
+<div id="navbar"style=" height:3%; background-color:white">
+ 
+<a href="javascript:void(0)" class="active"style="text-decoration: none;"><b style="color:purple; background-color:white">Explore World.</b></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--here &nbsp; add space-->
+
+
+<a href="#home" href=" javascript:void(0)" class="active"style="text-decoration: none;"><b style="color: purple; background-color:white">Home</b></a>
+
+&nbsp;<!--here &nbsp; add space-->
+
+<a href="#About" href=" javascript:void(0)"style="text-decoration: none;"><b style="color: purple; background-color:white">About</b></a>
+&nbsp;<!--here &nbsp; add space-->
+
+<a href="#Gallery" href=" javascript:void(0)"style="text-decoration: none;"><b style="color: purple; background-color:white">Gallery</b></a>
+
+&nbsp;<!--here &nbsp; add space-->
+
+
+<a href="#Login" href="javascript:void(0)"style="text-decoration: none;"><b style="color: purple; background-color:white">Login</b></a>
+
+&nbsp;<!--here &nbsp; add space-->
+
+<a href="#Contact" href="javascript:void(0)"style="text-decoration: none;"><b style="color: purple; background-color:white">Contact</b></a>
+ </div>
+</h6>
+
+
+ <div class="banner-area" id="home">
+ 
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+</header>
+
+
+
+<!--header section end-->
+
+<!--home section start-->
+<center>
+<section class="home" id="home"style="background-color: green">
+
+<div class="content"style="background-color: orange">
+<h1 style="color:white;background-color: pink; border-color:yellow;font-family: fantasy; font-size:xx-large;text-shadow:4px 4px green"> Explore new places,</h1>
+<h1 style="color:white;background-color:pink; border-color:yellow;font-family: fantasy; font-size:xx-large;text-shadow:4px 4px green"> Adventure await.</h1>
+
+<p style="color: red;background-color: rgb(194,339,245); border-color: yellow;font-family:serif; font-size:large">Travel is  fatal to prejudice, bigotry, <br>and narrow mindedness,and many<br> of our people need it sorely on these<br> accounts.
+</p>
+
+
+
+
+
+   </div>
+</div>
+
+<div form-container style="background-color:black;width:80%">
+<form action="mailto:rohit.iitm001@gmail.com">
+<h2 style="color:white;background-color: powderblue; border-color:yellow;font-family: fantasy; font-size:x-large;text-shadow:3px 3px black">
+Search your Designation
+</h2><span style="color:blue;background-color:#f9f8f7; border-color:red;font-family:serif; font-size:large">Location</span><br>
+<input type="text" placeholder ="Place you want to visit" required style="color:blue;background-color: rgba(1695,620,738); border-color:red"><br>
+<span style="color:blue;background-color:rgba(1695,620,738); border-color:red">Guest member</span><br>
+<input type="number" placeholder ="Number of Guest Member"required style="color:blue;background-color:rgba(1695,620,738) ; border-color:red"><br>
+<span style="color:blue;background-color:rgba(1695,620,738); border-color:red">Arrival</span><br>
+<input type="date"required style="color:blue;background-color: rgba(1695,620,738); border-color:red"><br>
+<span style="color:blue;background-color: rgba(1695,620,738); border-color:red">Leaving</span><br>
+<input type="date"required style="color:blue;background-color: rgba(1695,620,738); border-color:red"><br>
+<input 
+type="submit" value="submit" style="color:blue;background-color: rgba(1695,620,738); border-color:red;font-family:monospace; font-size:large">
+
+
+
+
+</form>
+</div>
+            </section>
+<!--home section end-->
+
+
+
+<!--About section start-->
+<div class="About-area" id="About"style="background-color:pink">
+<h1 style="color:white;background-color: red; border-color:yellow;font-family: fantasy; font-size:x-large;text-shadow:4px 4px black">About</h1>
+
+<div class="row">
+   <div class="image">
+<div class="container">
+<IMG src="https://i.pinimg.com/736x/f9/ce/4b/f9ce4b5530e74637675abcc6df55f504.jpg"style="width:100%; height:100%"> <div class="Centered"style="  position: absolute;
+  top: 20%;
+  left:12%;
+  transform: translate(-50%, -50%;"><b style="color:black;text-shadow:4px 4px white; background-color: powderblue">Lorem ipsum dolor sit amet, <br>illum definitiones no quo,<br> maluisset concludaturque et eum,<br> altera fabulas ut quo.<br> Atqui causae gloriatur ius te,<br> id agam omnis evertitur eum.<br> Affert laboramus repudiandae nec<br> et. Inciderint efficiantur his ad.<br> Eum no molestiae voluptatibus.<br> Eum no molestiae voluptatibus.<br>Lorem ipsum dolor sit amet, <br>illum definitiones no quo,<br> maluisset concludaturque et eum,<br> altera fabulas ut quo.<br> Atqui causae gloriatur ius te,<br> id agam omnis evertitur eum.<br> Affert </div>
+    
+
+
+
+
+</div>
+<!--About section end-->
+
+<!--gallery section start-->
+<div class="Gallery-area" id="Gallery"style="background-color: yellow">
+    <h1 style="color:white;background-color: red; border-color:yellow;font-family: fantasy; font-size:x-large;text-shadow:4px 4px black">Gallery</h1>
+ <div class="box-container" height="30" width="30">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">
+</div>
+
+
+<img src="https://neverendingexpedition.com/wp-content/uploads/2020/12/beach-1914300_1920.jpg" style="width:100%">
+  <div class="text"></div>
+</div> 
+       
+
+ 
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+    
+  
+<img src="https://www.tourmyindia.com/blog//wp-content/uploads/2018/06/Hill-Stations-Holidays.jpg"style="width:100%;shape: circle"> <a href="#" class=fa fa-heart></a>
+
+
+  <div class="text"></div>
+</div> 
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+
+
+  <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/10/shutterstock_2773329831.jpg" style="width:100%; shape: circle"> <a href="#" class=fa fa-heart></a>
+
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+
+
+  <img src="https://www.planetware.com/wpimages/2020/08/top-attractions-in-the-world-italy-rome-colosseum.jpg" style="width:100%"> <a href="#" class=fa fa-heart></a>
+
+  <div class="text"></div>
+</div>
+
+ 
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+
+
+  <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/11/Taj-Mahal-Agra-feature.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+
+   
+    
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+<!--gallery section end-->
+
+
+
+
+<!--Login Section Starts-->
+<div class="Login-area" id="Login"style="background-color:powderblue">
+<h1 style="color:white;background-color: red; border-color:yellow;font-family: fantasy; font-size:x-large;text-shadow:4px 4px black">Login</h1>
+
+
+<h2><div style="background-color: pink;width:200px"><form action="mailto:rohit.iitm001@gmail.com
+">
+
+
+</b>
+<b style="color: blue; 
+font-family: fantasy; font-weight: bold; font-
+size: 12px; background-color: red;border-color:yellow" 
+size="20" maxlength="20">
+Username:
+
+</b>
+<input type="username"required style="color: blue; 
+font-family: fantasy; font-weight: bold; font-
+size: 12px; background-color: red;border-color:yellow" 
+size=20" maxlength="20">
+
+
+<b style="color: blue; 
+font-family: fantasy; font-weight: bold; font-
+size: 12px; background-color: red;border-color:yellow" 
+size="20" maxlength="100">  
+Email:
+
+</b>
+<input type="email"required style="color: blue; 
+font-family: fantasy; font-weight: bold; font-
+size: 12px; background-color: red;border-color:yellow" 
+size=20" maxlength="100">
+
+
+<b style="color: blue; 
+font-family: fantasy; font-weight: bold; font-
+size: 12px; background-color: red;border-color:yellow" 
+size="10" maxlength="100">
+<br>
+Password: 
+</b>
+<br><input type="password"required style="color: blue; 
+font-family: fantasy; font-weight: bold; font-
+size: 12px; background-color: red;border-color:yellow" 
+size=20" maxlength="100">
+<h6 style="color:blue"><input type ="checkbox"required><b style="color: blue; 
+font-family: fantasy; font-weight: bold; font-
+size: 12px;border-color:yellow" 
+size="20" maxlength="20">
+
+I agree to the terms of the services</b></h6>
+
+<center>
+
+<input 
+type="Submit" value="Log in" style="color:blue;background-color: red; border-color:yellow"></center>
+
+
+</div></form>
+
+
+
+</div>
+
+
+<!--contact section start-->
+
+
+  <div class="Contact-area" id="Contact"style="background-color: skyblue">
+      <h1 style="color:white;background-color: red; border-color:yellow;font-family: fantasy; font-size:x-large;text-shadow:4px 4px black">Contact</h1>
+
+<div class="contact-info"style="margin:4rem 2rem; background-color:pink;width:1000;">
+
+<div class="contact-info"style="border-color:red">
+  <H3><h1 style="background-color:blue;text-shadow:4px 4px white">TECHNOLOGY WORLD</h1></h3></div>
+
+<div class="box">
+    <h2><i class="fa fa-instagram"></i>Phone</h2><p style="padding-left:1rem;font-size:2rem;color: black; text-decoration:none";font-weight:bold> <a style="color:black;text-decoration:none" href="tel:+6388228268"><u>6388228268</u></a></p></div>
+  
+<div class="box">
+    <h2><i class="fa fa-envelope"></i>E-mail</h2><p style="padding-left:1rem;font-size:20px;font-weight:bold;color: black; text-decoration:none"><a href="mailto: rohit.iitm001@gmail.com" style="padding-left:1rem;font-size:20px;font-weight:bold;color: black; text-decoration: underline">rohit.iitm001@gmail.com</a></p>
+<div class="row">
+<div class="box">
+    <h2> <i class="fa fa-home"></i>Address</h2></a>
+<p style="padding-left:1rem;font-size:2rem;font-weight:80px"><u><a style="color:black;text-decoration:none" href="https://maps.app.goo.gl/i9JELbb67QNH6NpL8"> Uttar Pradesh,<br>
+    Ballia,
+    Haldi</u></a></p>
+
+</div>
+</div>
+</div>
+
+   <div style="padding-top:4rem;font-size:2rem; background-color: powderblue" class="contact-form-container">
+  <form action="mailto:rohit.iitm001@gmail.com">
+<h2 style="background-color:blue;text-shadow:6px 6px white">Your Feedback</h2>
+ <div class="inputBox">
+     <input type="text" placeholder="Full Name"required style="background-color:pink;color:blue;border:40px;border-color: yellow;font-family: cursive"><br>
+     <input type="email" placeholder="Email"required style="background-color:pink;color:blue;border:40px;border-color: yellow;font-family: cursive"><br>
+
+</div>
+<textarea name="" I'd ="" rows="10" placeholder="Message"required style="background-color:pink;color:blue;border:40px;border-color: yellow;font-family: cursive"></textarea><br>
+
+<input type="submit" value="Submit"style="background-color:red;color:blue;border:40px;border-color: yellow;font-family: cursive">
+
+
+</div></div>
+<div>
+<marquee style="color: cyan; background-color: black; font-family: cursive; font-size:35px;text-shadow:2px 3px  white">Edited and Created by Rishaank Gupta </marquee>
+</div>
+</div>
+<section class="newsletter"style="background-color:black">
+<h1 style="color:white; background-color:black">Early Birds Get 25% Discount</h1>
+<p style="color:white">Loren ipsum dollar, sit amet consectetur adipising elit.
+</p>
+<form action="mailto: rohit.iitm001@gmail.com">
+
+  <input type="email" placeholder="Email"required style="background-color:red;color:white;border:40px;border-color: yellow;font-family: cursive">
+<input 
+type="Submit" value="Submit" style="color:blue;background-color: red; border-color:yellow;size:6;font-size:8"</center>
+<button style="background-color:grey">
+
+
+
+</form>
+
+<a href="https://youtube.com/channel/UCbTUHs_QJ94oDcDIdnAPfiw" class="fa fa-youtube" style="color:black"></a>
+
+<a href="https://www.instagram.com/the_lost_boy_231/" class="fa fa-instagram" style="color:black"></a>
+
+<a href="https://www.facebook.com/" class="fa fa-facebook" style="color:black"></a>
+
+<a href="https://wa.me/message/6PSBBAQDL22GO1" class="fa fa-whatsapp" style="color:black"></a>
+</button>
+
+<i onclick="RGFunction(this)" class="fa fa-thumbs-up" style="Color:red"></i>
+
+<script>
+function RGFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+</section>
+
+
+
+</div>
+
+</center>
+</body>
+</html>

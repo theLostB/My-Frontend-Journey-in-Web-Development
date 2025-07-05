@@ -1,0 +1,74 @@
+<Doctype! html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width-device-width" intial scale="1.0>"
+     <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
+
+  <title> Clock using HTML,CSS and JS </title>
+    
+    <style>
+.clockContainer{
+    position: relative;
+    background: url('https://toppng.com/uploads/preview/best-photos-of-analog-clock-template-11549790411qdlzkcpjwm.png');
+    height: 40vw;
+    width: 40vw;
+    background-size: 100%;
+    margin: auto;
+}
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+}
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;  
+}
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;  
+}
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8; 
+    
+}
+    </style>
+    <script>
+    setInterval(() => {
+    d = new Date();
+    htime= d.getHours();
+    mtime= d.getMinutes();
+    stime= d.getSeconds();
+    hrotation= 30*htime + mtime/2;
+    mrotation= 6*mtime;
+    srotation= 6*stime;    
+    
+    hour.style.transform = `rotate(${hrotation}deg)`;
+    minute.style.transform = `rotate(${mrotation}deg)`;
+    second.style.transform = `rotate(${srotation}deg)`;
+    
+}, 1000);
+    </script>
+</head>
+<body>
+    <div class="clockContainer">
+           <div id="hour"></div>
+           <div id="minute"></div>
+           <div id="second"></div>                      
+    </div>
+    jsjs
+</body>     
+
+</head>

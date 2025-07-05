@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<style>
+.myStyle {
+  background-color: coral;
+  padding: 16px;
+}
+</style>
+
+<body>
+<h1>The DOMToken Object</h1>
+<h2>The add() Method</h2>
+
+<button onclick="myFunction()">Add</button>
+<p>Click "Add" to add the "myStyle" class to myDIV.</p>
+
+<div id="myDIV">
+<p>I am a myDIV.</p>
+</div>
+
+<script>
+function myFunction() {
+  const list = document.getElementById("myDIV").classList;
+  list.toggle("myStyle");
+}
+</script>
+
+</body>
+</html>
